@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For-loop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Challenge 1: Recieving a number from user and printing them up to n    
+
+<input type="number" id="randnumber" placeholder="Please enter a number">
+<button id="printnumber">Submit</button>
+<h2 id="printarea"></h2>
+<script>
+    const button = document.getElementById('printnumber');
+    const printarea = document.getElementById('printarea');
+    button.addEventListener('click', () => {
+        let number = Number(document.getElementById('randnumber').value);
+        printarea.textContent = "";
+        for(let i = 1; i <= number; i++) {
+            printarea.innerHTML += i + '<br>';
+        }
+    });
+</script> -->
+
+    <!-- Challenge 2: Recieving a number from user and Sum 
+            
+<input type="number" id="usernumber" placeholder="Enter the number">
+<button id="checksummation">Add</button>
+<h2 id="printarea"></h2>
+
+<script>
+    const button = document.getElementById('checksummation');
+    const textarea = document.getElementById('textarea');
+    button.addEventListener('click', () => {
+        let userinput = document.getElementById('usernumber').value;
+        printarea.innerHTML = '';
+        let sum = 0;
+        for (let i = 1; i <= userinput; i++){
+            sum = sum + i;
+        }
+        printarea.textContent = sum;
+    })
+</script> -->
+
+        <!-- Challenge 3: Ask the user for a number and print its table (1 upto 10). -->
+<input type="number" id="userinput" placeholder="Enter the number">
+<button id="btn">Print Multiplication</button>
+<h3 id="printarea"></h3>
+<script>
+    const button = document.getElementById('btn');
+    const printarea = document.getElementById('printarea');
+    button.addEventListener('click', () => {
+        let number = Number(document.getElementById('userinput').value);
+        printarea.innerHTML = ""; // clear previous result
+        for (let i = 1; i <= 10; i++) {
+            let multi = number * i;
+            printarea.innerHTML += `${number} * ${i} = ${multi}<br>`;
+        }
+    });
+</script>
+</body>
+</html>
