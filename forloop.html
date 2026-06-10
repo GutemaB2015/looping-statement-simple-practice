@@ -45,7 +45,7 @@
     })
 </script> -->
 
-        <!-- Challenge 3: Ask the user for a number and print its table (1 upto 10). -->
+        <!-- Challenge 3: Ask the user for a number and print its table (1 upto 10).
 <input type="number" id="userinput" placeholder="Enter the number">
 <button id="btn">Print Multiplication</button>
 <h3 id="printarea"></h3>
@@ -54,10 +54,29 @@
     const printarea = document.getElementById('printarea');
     button.addEventListener('click', () => {
         let number = Number(document.getElementById('userinput').value);
-        printarea.innerHTML = ""; // clear previous result
+        printarea.innerHTML = "";
         for (let i = 1; i <= 10; i++) {
             let multi = number * i;
             printarea.innerHTML += `${number} * ${i} = ${multi}<br>`;
+        }
+    });
+</script> -->
+
+        <!-- Challenge 4: Printing even number only 1-n (Using for-loop and if statement) -->
+
+    <input type="number" id="userinput" placeholder="Enter the number">
+<button id="btn">Print Even Number</button>
+<h3 id="printarea"></h3>
+<script>
+    const button = document.getElementById('btn');
+    const printarea = document.getElementById('printarea');
+    button.addEventListener('click', () => {
+        let number = Number(document.getElementById('userinput').value);
+        printarea.innerHTML = "";
+        for (let i = 1; i <= number; i++) {
+        if (i % 2 === 0) {
+        printarea.innerHTML += i + "<br>";
+            }
         }
     });
 </script>
