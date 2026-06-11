@@ -64,7 +64,7 @@
 
         <!-- Challenge 4: Printing even number only 1-n (Using for-loop and if statement) -->
 
-    <input type="number" id="userinput" placeholder="Enter the number">
+<!--     <input type="number" id="userinput" placeholder="Enter the number">
 <button id="btn">Print Even Number</button>
 <h3 id="printarea"></h3>
 <script>
@@ -79,6 +79,35 @@
             }
         }
     });
-</script>
+</script> -->
+
+        <!-- Challenge 5: Printing odd number only 1-n (Using for-loop and if statement) -->
+<!-- 
+<input type="number" id="oddnum" placeholder="Enter odd number">
+<button id="checkodd">Print odd number</button>
+<h2 id="printarea"></h2>
+<script>
+    const button = document.getElementById('checkodd');
+    const printarea = document.getElementById('printarea');
+    button.addEventListener('click', () =>{
+        let odd = document.getElementById('oddnum').value;
+        printarea.innerHTML = "";
+        for (let i=1; i<=odd; i++){
+            if (i%2 !== 0){
+                printarea.innerHTML += i + "<br>";
+            }
+        }
+    });
+</script> -->
+
+        <!-- Challenge 6: Password checker using while loop -->
+        <script>
+            let pass = prompt("Enter password:");
+            while (pass !== "admin123") { //I understand that while loop is a little tricky, It doesn't work with html input field though.
+                alert("Wrong password");
+                pass = prompt("Enter password again:");
+            }
+                alert("Access Granted");
+        </script>
 </body>
 </html>

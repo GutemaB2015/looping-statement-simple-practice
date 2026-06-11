@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For-each Loop</title>
+</head>
+<body>
+    <h2 id="displayarea"></h2>
+    <script>
+        const displayarea = document.getElementById('displayarea');
+        const products = ['Smartwatch','Phone','Tablet','Laptop'];
+        products.forEach(product => {
+            displayarea.innerHTML += product + "<br>";
+        });
+    </script>
+</body>
+</html>
